@@ -17,10 +17,6 @@ body {
   font-size: 1.3rem;
 }
 
-article h3 {
-  border-bottom: 2px solid #ffb0b0;
-}
-
 header {
   display: -ms-grid;
   display: grid;

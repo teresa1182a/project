@@ -25,6 +25,11 @@ body {
   width: $width;
   margin: $margin auto;
 }
+article{
+  h3{
+    border-bottom: 2px solid rgb(255, 176, 176);
+  }
+}
 
 
 //Header
