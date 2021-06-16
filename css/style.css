@@ -17,7 +17,10 @@ body {
   font-size: 1.3rem;
 }
 
-<<<<<<< HEAD
+article h3 {
+  border-bottom: 2px solid #ffb0b0;
+}
+
 div.as {
   text-align: center;
 }
@@ -76,10 +79,6 @@ ul.drop-menu li ul {
 
 ul.drop-menu li:hover > ul {
   display: block;
-=======
-article h3 {
-  border-bottom: 2px solid #ffb0b0;
->>>>>>> b83e4267eb146eb00cf79dca6671d2c49dc577b3
 }
 
 header {
