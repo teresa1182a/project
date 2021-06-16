@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  background-color: #f9f2f2;
   font-size: 1.3rem;
 }
 
@@ -27,7 +26,7 @@ div.as > ul {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px 0;
-  background: rgba(231, 161, 161, 0.979);
+  background: #2a21a0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,12 +43,13 @@ div.as > ul > li {
   position: relative;
   font-size: 17px;
   font-weight: bolder;
-  color: rgba(231, 161, 161, 0.979);
+  color: #fff;
   cursor: pointer;
 }
 
 div.as > ul > li:hover {
   background: rgba(231, 161, 161, 0.979);
+  color: #fff;
   padding: 5px;
 }
 
@@ -60,8 +60,7 @@ ul.drop-menu {
 
 ul.drop-menu li {
   margin: 0 5px;
-  background: rgba(231, 161, 161, 0.979);
-  color: rgba(231, 161, 161, 0.979);
+  background: #2a21a0;
   list-style: none;
 }
 
@@ -89,7 +88,7 @@ header {
 }
 
 header .logo {
-  width: 70%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,18 +125,6 @@ nav ul {
 
 nav ul li {
   padding: 1.8rem 1rem;
-}
-
-.search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .slider_container {
@@ -351,7 +338,7 @@ img.hot {
   font-size: 15px;
 }
 
-div.last {
+.last {
   background-color: #433d3cf1;
   color: #adadad;
   padding-bottom: 1rem;
@@ -360,7 +347,12 @@ div.last {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-@media (min-width: 768px) {
+.last img {
+  max-width: 100%;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
   header {
     grid-template-columns: repeat(3, 1fr);
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -368,6 +360,15 @@ div.last {
   header .logo {
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .links .links-inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

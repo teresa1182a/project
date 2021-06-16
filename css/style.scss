@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -13,8 +14,6 @@ html {
 }
 
 body {
-
-  background-color: #f9f2f2;
   font-size: 1.3rem;
 }
 @mixin cs ($size){
@@ -38,7 +37,8 @@ div.as > ul {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px 0;
-  background: rgba(231, 161, 161, 0.979);
+  background: rgb(42, 33, 160);
+  
   display: flex;
   justify-content: center;
   
@@ -52,12 +52,13 @@ div.as > ul > li  {
   position: relative;
   font-size: 17px;
   font-weight: bolder;
-  color: rgba(231, 161, 161, 0.979);
+  color: #fff;
   cursor: pointer;
 
 }
 div.as > ul > li:hover {
   background: rgba(231, 161, 161, 0.979);
+  color: #fff;
   padding: 5px;
 }
 
@@ -68,16 +69,14 @@ ul.drop-menu {
 }
 ul.drop-menu li {
   margin: 0 5px;
-  background: rgba(231, 161, 161, 0.979);
-  color: rgba(231, 161, 161, 0.979);
+  background: rgb(42, 33, 160);
   list-style: none;
-
 
   
 }
 ul.drop-menu li:hover {
   background: rgba(231, 161, 161, 0.979);
-
+  
 }
 
 ul.drop-menu li ul{
@@ -91,8 +90,6 @@ ul.drop-menu li:hover> ul {
 
 
 
-
-
 //Header
 
 header{
@@ -103,7 +100,7 @@ header{
   font-size: 15px;
 
   .logo{
-    width: 70%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,12 +130,6 @@ nav{
   }
 }
 
-.search{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .slider_container {
   margin: 30px auto;
@@ -353,18 +344,22 @@ img.hot{
   }
 }
 
-div.last{
+.last{
   background-color: #433d3cf1;
   color: rgb(173, 173, 173);
   padding-bottom: 1rem;
   font-size: 14px;
   letter-spacing: 2px;
   text-shadow: black 0.1em 0.1em 0.2em;
+  img{
+    max-width: 100%;
+    width: 50%;
+  }
 }
 
 
 
-@media(min-width:768px){
+@media(max-width:768px){
   header{
     grid-template-columns: repeat(3,1fr);
     -ms-grid-columns:1fr 1fr 1fr;
@@ -373,4 +368,13 @@ div.last{
       justify-self:start ;
     }
   }
+  .links{
+    .links-inner{
+    display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
+      grid-gap: 20px;
+  }
+}
+
 }
