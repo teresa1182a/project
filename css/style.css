@@ -247,7 +247,7 @@ nav ul li {
   animation-play-state: paused;
 }
 
-div.a1 {
+.a1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
@@ -257,7 +257,7 @@ div.a1 {
   padding: 2rem 7rem 3rem 10rem;
 }
 
-div.a1 img {
+.a1 img {
   width: 80%;
 }
 
@@ -298,6 +298,61 @@ section.articles article .info {
 img.hot {
   width: 80%;
   padding: 1rem 0 3rem 0;
+}
+
+.four {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 5rem;
+  min-width: 30rem;
+  padding: 2rem 7rem 3rem 7rem;
+  margin: auto;
+  width: 90%;
+}
+
+.four img {
+  width: 55%;
+}
+
+.four nav {
+  border: 1px solid lightgray;
+}
+
+.four .wd {
+  float: right;
+  width: 45%;
+  padding: 1rem 0 0 2rem;
+}
+
+.four .wd h1 {
+  font-size: 23px;
+  border-bottom: lightseagreen 2px solid;
+  color: lightseagreen;
+  padding-bottom: 1rem;
+}
+
+.four .wd p {
+  font-size: 15px;
+  padding-top: 1rem;
+  letter-spacing: 2px;
+}
+
+.mango {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 5rem;
+  min-width: 30rem;
+  padding: 2rem 0rem 3rem 7rem;
+  width: 90%;
+  margin: auto;
+}
+
+.mango img {
+  border: #c5e1fd solid 2px;
 }
 
 /*Links*/
