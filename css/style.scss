@@ -94,6 +94,7 @@ ul.drop-menu li:hover> ul {
 }
 
 
+
 //Header
 
 header{
@@ -258,8 +259,7 @@ nav{
           animation-play-state: paused;
 }
 
-
-div.a1{
+.a1{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
   grid-gap: 3rem;
@@ -270,6 +270,7 @@ div.a1{
     width: 80%;
 }
 }
+
 
 
 //section
@@ -304,7 +305,57 @@ section.articles{
 img.hot{
   width: 80%;
   padding: 1rem 0 3rem 0;
+  
 }
+
+.four {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+  grid-gap: 5rem;
+  min-width: 30rem;
+  padding: 2rem 7rem 3rem 7rem;
+  margin: auto;
+  width: 90%;
+
+img{
+  width: 55%;
+}
+nav{
+  border: 1px solid lightgray;
+}
+
+  .wd{
+  float: right; 
+  width: 45%;
+  padding: 1rem 0 0 2rem;
+  h1{
+    font-size: 23px;
+    border-bottom: lightseagreen 2px solid;
+    color: lightseagreen;
+    padding-bottom: 1rem;
+  }
+  p{
+    font-size: 15px;
+    padding-top: 1rem;
+    letter-spacing: 2px;
+  }
+  }
+}
+
+.mango{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+  grid-gap: 5rem;
+  min-width: 30rem;
+  padding: 2rem 0rem 3rem 7rem;
+  width: 90%;
+  margin: auto;
+  img{
+    border: rgb(197, 225, 253) solid 2px;
+  }
+}
+
+
 
 /*Links*/
 .links{
